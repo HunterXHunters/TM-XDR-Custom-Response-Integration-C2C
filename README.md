@@ -19,15 +19,28 @@ For this script, we have picked Mitre Tactic Id: TA0011 which points to Command 
 #### Use-case 1:
 	- If risk score is good, this requires Manual Assessment as VirusTotal reputation is Bad but Sandbox analysis finds no suspicious indicators
 	- If risk score if bad: Script triggers Vision One Threat Intelligence module and block below indicators in Suspicious Object Management:
-		-- Domain 
-		-- URL and
-		-- IP addresses
+		 * Domain 
+		 * URL and
+		 * IP addresses
 #### Use-case 2:
 	- If in case of Short-lived URLs: The URL you entered seems to be offline and analysis of offline URLs is currently unsupported. Script triggers Vision One Threat Intelligence module and block below indicators in Suspicious Object Management:
-		-- Domain 
-		-- IP addresses
-		Important: Malicious URLs tend to have a short lifespan. The fact that this URL is offline is highly suspicious.
+		* Domain 
+		* IP addresses
 
+Important: Malicious URLs tend to have a short lifespan. The fact that this URL is offline is highly suspicious.
+		
 6.	As part of Threat Hunting to discover un-detected entities to above discovered Highlighted objects and to this, 
 	- script constructs STIXs feed with suspicious domain.
 	- Constructed STIXs feed gets auto uploaded to custom Threat Intelligence Reports and initates auto-sweeping task to detect all entities with observed indicator.
+
+In this script, we have used below Trend Micro Vision One modules for this automation.
+
+#### Observed Attack Techniques:
+Displays the individual events detected in your environment that may trigger an alert and any related MITRE information.
+
+#### Suspicious Object Management:
+You can manage the Suspicious Object List and Exception List to control the specific information for synchronization.
+
+#### Threat Intelligence Reports:
+The Intelligence Reports app allows you to leverage valuable indicators of potential threats from both curated intelligence reports and your custom intelligence reports.
+
