@@ -8,7 +8,7 @@ For this script, we have picked Mitre Tactic Id: TA0011 which points to Command 
 2. From alert, script pulls value form Suspicious Highlighted objects and send it VirusTotal for reputation checks.
 
 3. From VirusTotal results, script checks the below use-cases [you can always fine-tune the conditions for count of VT engines detections]:
-         Use-cases:
+#### Use-cases:
 	1. If number of engines detected is 0: is not Malicious and needs no furthure actions.
 	2. If number of engines detected is > 0 and <= 3: Maybe Malicious which requires manual investigation and if found abnormal, please add findings to VisionOne Suspicious Object list or add IoC to your respective security tools [if non-TM tools at Network, Email Gateway, etc.]
 	3. If number of engines detected is > 4: is found Malicious and next steps follows as below.
