@@ -16,13 +16,13 @@ For this script, we have picked Mitre Tactic Id: TA0011 which points to Command 
 4. If number of engines detected is > 4, we will now send the Suspicious Highlighted objects to Intezer Analze Sandbox environment.
 
 5. From sandbox results, script now checks for below use-cases:
-	### Use-case 1:
+	#### Use-case 1:
 	- If risk score is good, this requires Manual Assessment as VirusTotal reputation is Bad but Sandbox analysis finds no suspicious indicators
 	- If risk score if bad: Script triggers Vision One Threat Intelligence module and block below indicators in Suspicious Object Management:
 		-- Domain 
 		-- URL and
 		-- IP addresses
-	### Use-case 2:
+	#### Use-case 2:
 	- If in case of Short-lived URLs: The URL you entered seems to be offline and analysis of offline URLs is currently unsupported. Script triggers Vision One Threat Intelligence module and block below indicators in Suspicious Object Management:
 		-- Domain 
 		-- IP addresses
