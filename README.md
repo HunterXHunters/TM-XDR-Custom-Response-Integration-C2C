@@ -33,6 +33,8 @@ Important: Malicious URLs tend to have a short lifespan. The fact that this URL 
 	- script constructs STIXs feed with suspicious domain.
 	- Constructed STIXs feed gets auto uploaded to custom Threat Intelligence Reports and initates auto-sweeping task to detect all entities with observed indicator.
 
+![observed_attack_techniques](https://github.com/HunterXHunters/TM-XDR-Custom-Response-Integration-C2C/assets/2347778/06885012-d6f8-406e-ae99-9d3127419e25)
+
 In this script, we have used below Trend Micro Vision One modules for this automation.
 
 #### Observed Attack Techniques:
