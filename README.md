@@ -1,7 +1,7 @@
 # TM-XDR-Custom-Response-Integration-C2C
 End-to-End Event-Driven Automation for observed Command and Control (C2C) alerts and hunting for un-discoved entities.
 
-In this script, we have picked ** Mitre Tactic Id: TA0011  ** which points to Command and Control attacks for all techniques associated and this can help you to automate manual tasks which L1 team performing in process of triaging the alert.
+In this script, we have picked **Mitre Tactic Id: TA0011** which points to Command and Control attacks for all techniques associated and this can help you to automate manual tasks which L1 team performing in process of triaging the alert.
 
 1. Script fetches all Critical/ High alerts and picks first alert associated with Tactic Id: TA0011 from observed attack techniques alert for last 10 days [You can change the days from timepicker in the script] and extracts meta-data required for analysis. 
 
